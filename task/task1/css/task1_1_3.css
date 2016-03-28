@@ -3,11 +3,15 @@
 
 .container{
 	background:#EEE;
-	overflow:auto;
+	/*overflow:auto;*/
 	border:1px solid #000000;
 	padding:20px;
 	}
-	
+.container:after {
+  content:"";
+  display:table;
+  clear:both;
+    }	
 .item{
 	padding:20px;
 	background:#FFF;
