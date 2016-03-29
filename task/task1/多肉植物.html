@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>多肉植物</title>
+<link href="css/task1_1_5.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -17,6 +18,46 @@
 </ul>
 </div>
 </div>
+
+<div class="aside1">
+<h2>用户注册信息</h2>
+<form>
+    <label class="inputuser" for="emailaddress">邮箱</label>
+    <input type="email" id="emailaddress" name="email" placeholder="请输入邮箱" pattern="/^([a-zA-Z0-9\-])+\@(([a-zA-Z0-9\-]+\.)+([a-zA-Z0-9]{2,4})+$/">
+<br><br>
+    <label class="inputuser" for="pass">密码</label>
+    <input type="password" id="pass" name="password"placeholder="密码为6-16位英文数字" pattern="^[a-z0-9A-Z]{6，16}$">
+<br><br>
+    <label class="inputuser" for="passagain">再次输入密码</label>
+    <input type="repeatpassword" id="passagain" placeholder="密码为6-16位英文数字" pattern="^[a-z0-9A-Z]{6，16}$">
+    <br>
+    <br>
+    <label class="inputuser">性别:</label>
+    <label class="size" for="male">男</label>
+    <input type="radio" id="male" name="gender">
+    <label class="size" for="female">女</label>
+    <input type="radio" id="female" name="gender"><br><br>
+    <label class="inputuser">城市：</label>
+    <select>
+        <option class="size" value="北京" selected="selected">北京</option>
+        <option class="size" value="上海">上海</option>
+        <option class="size" value="广州">广州</option>
+        <option class="size" value="深圳">深圳</option>
+    </select><br><br>
+    <label class="inputuser">兴趣爱好:</label>
+    <label class="size">篮球</label>
+    <input type="checkbox" name="interest">
+    <label class="size">足球</label>
+    <input type="checkbox" name="interest">
+    <label class="size">乒乓球</label>
+    <input type="checkbox" name="interest" checked="checked"><br><br>
+    <label class="inputuser">个人描述：</label>
+    <textarea rows="3" cols="15" placeholder="在这里输入个人描述"></textarea>
+    <br><br>
+    <input id="rescon" type="submit" value="提交" name="submit88">
+</form>
+</div>
+
 <div class="article1">
 <h2>景天科拟石莲花属</h21>
 <h3>静夜简介</h3>
@@ -102,45 +143,8 @@
 </tbody>
 </table>
 </div>
-<div class="aside1">
-<aside><h2>用户注册信息</h2>
-<form>
-    <label class="inputuser" for="emailaddress">邮箱</label>
-    <input type="email" id="emailaddress" name="email" placeholder="请输入邮箱" pattern="/^([a-zA-Z0-9\-])+\@(([a-zA-Z0-9\-]+\.)+([a-zA-Z0-9]{2,4})+$/">
-<br><br>
-    <label class="inputuser" for="pass">密码</label>
-    <input type="password" id="pass" name="password"placeholder="密码为6-16位英文数字" pattern="^[a-z0-9A-Z]{6，16}$">
-<br><br>
-    <label class="inputuser" for="passagain">再次输入密码</label>
-    <input type="repeatpassword" id="passagain" placeholder="密码为6-16位英文数字" pattern="^[a-z0-9A-Z]{6，16}$">
-    <br>
-    <br>
-    <label class="inputuser">性别:</label>
-    <label for="male">男</label>
-    <input type="radio" id="male" name="gender">
-    <label for="female">女</label>
-    <input type="radio" id="female" name="gender"><br><br>
-    <label class="inputuser">城市：</label>
-    <select>
-        <option value="北京" selected="selected">北京</option>
-        <option value="上海">上海</option>
-        <option value="广州">广州</option>
-        <option value="深圳">深圳</option>
-    </select><br><br>
-    <label class="inputuser">兴趣爱好:</label>
-    <label>篮球</label>
-    <input type="checkbox" name="interest">
-    <label>足球</label>
-    <input type="checkbox" name="interest">
-    <label>乒乓球</label>
-    <input type="checkbox" name="interest" checked="checked"><br><br>
-    <label class="inputuser">个人描述：</label>
-    <textarea rows="5" cols="20">在这里输入个人描述</textarea><br><br>
-    <input id="rescon" type="submit" value="提交" name="submit88">
-</form>
-</aside>
-</div>
+
 <br>
-<footer class="footer">版权所有&copy;</footer>
+<footer class="footer"><p>版权所有&copy;</p></footer>
 </body>
 </html>
